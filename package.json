@@ -1,0 +1,23 @@
+{
+  "name": "post-renderer",
+  "version": "1.0.0",
+  "description": "Convert that post JSON into HTML",
+  "main": "dest/bundle.js",
+  "scripts": {
+    "build": "node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsoq/post-renderer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsoq/post-renderer/issues"
+  },
+  "homepage": "https://github.com/bsoq/post-renderer#readme",
+  "dependencies": {
+    "rollup": "^1.8.0",
+    "rollup-plugin-html": "^0.2.1"
+  }
+}
