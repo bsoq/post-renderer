@@ -1411,7 +1411,9 @@
 
 	  return "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>"
 	    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-	    + "</title>\r\n</head>\r\n\r\n<body>\r\n    <div class=\"thread\" id=\"t"
+	    + "</title>\r\n    <link rel=\"stylesheet\" href=\""
+	    + alias4(((helper = (helper = helpers.css || (depth0 != null ? depth0.css : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"css","hash":{},"data":data}) : helper)))
+	    + "\">\r\n</head>\r\n\r\n<body>\r\n    <div class=\"thread\" id=\"t"
 	    + alias4(((helper = (helper = helpers.threadId || (depth0 != null ? depth0.threadId : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"threadId","hash":{},"data":data}) : helper)))
 	    + "\">\r\n        "
 	    + ((stack1 = ((helper = (helper = helpers.op || (depth0 != null ? depth0.op : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"op","hash":{},"data":data}) : helper))) != null ? stack1 : "")
@@ -1434,8 +1436,9 @@
 	    return post.isOp ? templates.op(post) : templates.post(post);
 	}
 
-	function renderThreadAsHtml(thread) {
+	function renderThreadAsHtml(thread, css) {
 	    return templates.thread({
+	        css,
 	        title: thread[0].subject,
 	        threadId: thread[0].number,
 	        op: templates.op(thread[0]),

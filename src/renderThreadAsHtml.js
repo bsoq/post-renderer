@@ -1,7 +1,8 @@
 import templates from './templates.js';
 
-function renderThreadAsHtml(thread) {
+function renderThreadAsHtml(thread, css) {
     return templates.thread({
+        css,
         title: thread[0].subject,
         threadId: thread[0].number,
         op: templates.op(thread[0]),
