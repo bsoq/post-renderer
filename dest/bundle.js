@@ -1403,16 +1403,16 @@
 	}
 
 	var Template$2 = runtime$1.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-	    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+	    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
 	  return "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>"
 	    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
 	    + "</title>\r\n</head>\r\n\r\n<body>\r\n    <div class=\"thread\" id=\"t"
 	    + alias4(((helper = (helper = helpers.threadId || (depth0 != null ? depth0.threadId : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"threadId","hash":{},"data":data}) : helper)))
 	    + "\">\r\n        "
-	    + alias4(((helper = (helper = helpers.op || (depth0 != null ? depth0.op : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"op","hash":{},"data":data}) : helper)))
+	    + ((stack1 = ((helper = (helper = helpers.op || (depth0 != null ? depth0.op : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"op","hash":{},"data":data}) : helper))) != null ? stack1 : "")
 	    + "\r\n        "
-	    + alias4(((helper = (helper = helpers.replies || (depth0 != null ? depth0.replies : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"replies","hash":{},"data":data}) : helper)))
+	    + ((stack1 = ((helper = (helper = helpers.replies || (depth0 != null ? depth0.replies : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"replies","hash":{},"data":data}) : helper))) != null ? stack1 : "")
 	    + "\r\n    </div>\r\n</body>\r\n\r\n</html>";
 	},"useData":true});
 	function thread(data, options, asString) {
