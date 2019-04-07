@@ -1260,9 +1260,9 @@
 	    + alias4(((helper = (helper = helpers.fileSize || (depth0 != null ? depth0.fileSize : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"fileSize","hash":{},"data":data}) : helper)))
 	    + "\" data-md5=\""
 	    + alias4(((helper = (helper = helpers.md5 || (depth0 != null ? depth0.md5 : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"md5","hash":{},"data":data}) : helper)))
-	    + "\"\r\n                    style=\"height: "
+	    + "\"\r\n                    style=\"width: "
 	    + alias4(((helper = (helper = helpers.tn_w || (depth0 != null ? depth0.tn_w : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"tn_w","hash":{},"data":data}) : helper)))
-	    + "px; width: "
+	    + "px; height: "
 	    + alias4(((helper = (helper = helpers.tn_h || (depth0 != null ? depth0.tn_h : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"tn_h","hash":{},"data":data}) : helper)))
 	    + "px;\">\r\n                <div data-tip=\"\" data-tip-cb=\"mShowFull\" class=\"mFileInfo mobile\">"
 	    + alias4(((helper = (helper = helpers.fileSize || (depth0 != null ? depth0.fileSize : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"fileSize","hash":{},"data":data}) : helper)))
@@ -1337,9 +1337,9 @@
 	    + alias4(((helper = (helper = helpers.fileSize || (depth0 != null ? depth0.fileSize : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"fileSize","hash":{},"data":data}) : helper)))
 	    + "\" data-md5=\""
 	    + alias4(((helper = (helper = helpers.md5 || (depth0 != null ? depth0.md5 : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"md5","hash":{},"data":data}) : helper)))
-	    + "\"\r\n                    style=\"height: "
+	    + "\"\r\n                    style=\"width: "
 	    + alias4(((helper = (helper = helpers.tn_w || (depth0 != null ? depth0.tn_w : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"tn_w","hash":{},"data":data}) : helper)))
-	    + "px; width: "
+	    + "px; height: "
 	    + alias4(((helper = (helper = helpers.tn_h || (depth0 != null ? depth0.tn_h : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"tn_h","hash":{},"data":data}) : helper)))
 	    + "px;\">\r\n                <div data-tip=\"\" data-tip-cb=\"mShowFull\" class=\"mFileInfo mobile\">"
 	    + alias4(((helper = (helper = helpers.fileSize || (depth0 != null ? depth0.fileSize : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"fileSize","hash":{},"data":data}) : helper)))
