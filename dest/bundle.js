@@ -1243,7 +1243,7 @@
 	    + "\">\r\n            <div class=\"fileText\" id=\"fT"
 	    + alias4(((helper = (helper = helpers.number || (depth0 != null ? depth0.number : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"number","hash":{},"data":data}) : helper)))
 	    + "\">File:\r\n                <a href=\""
-	    + alias4(((helper = (helper = helpers.fileThumbSrc || (depth0 != null ? depth0.fileThumbSrc : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"fileThumbSrc","hash":{},"data":data}) : helper)))
+	    + alias4(((helper = (helper = helpers.fileSrc || (depth0 != null ? depth0.fileSrc : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"fileSrc","hash":{},"data":data}) : helper)))
 	    + "\" target=\"_blank\">"
 	    + alias4(((helper = (helper = helpers.filename || (depth0 != null ? depth0.filename : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"filename","hash":{},"data":data}) : helper)))
 	    + "</a>\r\n                ("
@@ -1253,7 +1253,7 @@
 	    + "x"
 	    + alias4(((helper = (helper = helpers.h || (depth0 != null ? depth0.h : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"h","hash":{},"data":data}) : helper)))
 	    + ")\r\n            </div>\r\n            <a class=\"fileThumb\" href=\""
-	    + alias4(((helper = (helper = helpers.fileThumbSrc || (depth0 != null ? depth0.fileThumbSrc : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"fileThumbSrc","hash":{},"data":data}) : helper)))
+	    + alias4(((helper = (helper = helpers.fileSrc || (depth0 != null ? depth0.fileSrc : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"fileSrc","hash":{},"data":data}) : helper)))
 	    + "\" target=\"_blank\">\r\n                <img src=\""
 	    + alias4(((helper = (helper = helpers.fileThumbSrc || (depth0 != null ? depth0.fileThumbSrc : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"fileThumbSrc","hash":{},"data":data}) : helper)))
 	    + "\" alt=\""
