@@ -1,0 +1,57 @@
+<div class="postContainer opContainer" id="pc{{number}}">
+    <div id="p{{number}}" class="post op">
+        <div class="postInfoM mobile" id="pim{{number}}">
+            <span class="nameBlock">
+                {{#if name}}
+                <span class="name">{{name}}</span>
+                {{/if}}
+                {{#if trip}}
+                <span class="postertrip">{{trip}}</span>
+                {{/if}}
+                <span class="posteruid id_{{id}}">(ID:
+                    <span class="hand" title="Highlight posts by this ID">{{id}}</span>)
+                </span>
+                <br>
+                <span class="subject">
+                    <span data-tip="" data-tip-cb="mShowFull">{{subject}}</span>
+                </span>
+            </span>
+            <span class="dateTime postNum" data-utc="{{time}}">{{time4chanFormatted}}
+                <a href="#p{{number}}" title="Link to this post">No.</a>
+                <a href="javascript:quote('{{number}}');" title="Reply to this post">{{number}}</a>
+            </span>
+        </div>
+        <div class="file" id="f{{number}}">
+            <div class="fileText" id="fT{{number}}">File:
+                <a href="thumbs/1554056610077.jpg" target="_blank">{{filename}}</a>
+                ({{fileSize}}, {{w}}x{{h}})
+            </div>
+            <a class="fileThumb" href="thumbs/1554056610077.jpg" target="_blank">
+                <img src="{{fileThumbSrc}}" alt="{{fileSize}}" data-md5="{{md5}}"
+                    style="height: {{tn_w}}px; width: {{tn_h}}px;">
+                <div data-tip="" data-tip-cb="mShowFull" class="mFileInfo mobile">{{fileSize}}</div>
+            </a>
+        </div>
+        <div class="postInfo desktop" id="pi{{number}}">
+            <input type="checkbox" name="{{number}}" value="delete">
+            <span class="subject">{{subject}}</span>
+            <span class="nameBlock">
+                {{#if name}}
+                <span class="name">{{name}}</span>
+                {{/if}}
+                {{#if trip}}
+                <span class="postertrip">{{trip}}</span>
+                {{/if}}
+                <span class="posteruid id_{{id}}">(ID:
+                    <span class="hand" title="Highlight posts by this ID">{{id}}</span>)
+                </span>
+            </span>
+            <span class="dateTime" data-utc="{{time}}">{{time4chanFormatted}}</span>
+            <span class="postNum desktop">
+                <a href="#p{{number}}" title="Link to this post">No.</a><a href="javascript:quote('{{number}}');"
+                    title="Reply to this post">{{number}}</a>
+            </span>
+        </div>
+        <blockquote class="postMessage" id="m{{number}}">{{{comment}}}</blockquote>
+    </div>
+</div>

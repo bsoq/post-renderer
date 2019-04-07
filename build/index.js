@@ -1,19 +1,39 @@
+const packageJson = require('../package.json');
 const path = require('path');
 const rollup = require('rollup');
-const rollupPluginHtml = require('rollup-plugin-html');
+var nodeResolve = require('rollup-plugin-node-resolve');
+var commonjs = require('rollup-plugin-commonjs');
+var handlebars = require('rollup-plugin-handlebars-plus');
 
 const projectRoot = path.join(__dirname, '..');
 const dest = path.join(projectRoot, 'dest');
 
+function makeValidName(name) {
+    return name.replace(/-([A-z])/g, ($0, $1) => {
+        return $1.toUpperCase();
+    });
+}
+
 const inputOptions = {
     input: path.join(projectRoot, 'src', 'index.js'),
     plugins: [
-        rollupPluginHtml()
+        nodeResolve(),
+        commonjs({
+            include: 'node_modules/**',
+        }),
+        handlebars({
+            handlebars: {
+                options: {
+                    sourceMap: false
+                }
+            }
+        })
     ]
 };
 const outputOptions = {
+    name: makeValidName(packageJson.name),
     file: path.join(dest, 'bundle.js'),
-    format: 'cjs'
+    format: 'umd'
 };
 
 async function build() {

@@ -1,11 +1,9 @@
-import post from './templates/post.html';
-import name from './templates/name.html';
-import trip from './templates/trip.html';
-import file from './templates/file.html';
+import op from './templates/op.hbs';
+import post from './templates/post.hbs';
+import thread from './templates/thread.hbs';
 
 export default {
+    op,
     post,
-    name,
-    trip,
-    file
+    thread
 };
